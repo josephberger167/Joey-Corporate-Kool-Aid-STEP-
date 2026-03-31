@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
-    <script src="sketch.js"></script>
+    <!-- Document Setup: Sets the character set and ensures the page fits on mobile screens -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Tab Title: The name that appears on the browser tab -->
+    <title>Joey Corporate Kool-Aid's (Programming)</title>
+    
+    <!-- Animation Library: Loads the external p5.js engine required to draw the brain and battery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    
+    <!-- Style Link: Connects this page to your style.css for the blue background and interactive buttons -->
     <link rel="stylesheet" type="text/css" href="style.css">
-  <style> body {padding: 0; margin: 0;} </style>
-
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Programming Page</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<h1> Programming Page
-	<p><p>This shows how when Joey Corporate Kool-Aid is faced with a moral quandry or situation that contradicts his worldview, he uses his superpower -- his brain shuts off-- allowing him to continue on his path to STEP.
-</p>
-</br>
-	<a href="index.html">Home</a>
+    <!-- Page Header: Displays the main title at the top of the page -->
+    <h1>Programming Page</h1>
+
+    <!-- Content Description: Explains the story behind the brain shutdown animation -->
+    <p>This shows how when Joey Corporate Kool-Aid is faced with a moral quandary or situation that contradicts his worldview, he uses his superpower -- his brain shuts off -- allowing him to continue on his path to STEP.</p>
+
+    <!-- Navigation Bar: The 5-link interactive menu (Excludes the Programming link) -->
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="landscape.html">Landscape</a></li>
+        <li><a href="animation.html">Animation</a></li>
+        <li><a href="audio.html">Audio</a></li>
+        <li><a href="final.html">The Final</a></li>
+    </ul>
+
+    <!-- Logic Connection: Links the specific drawing code (sketch.js) to this page -->
+    <script src="sketch.js"></script>
 </body>
 </html>
