@@ -1,29 +1,81 @@
-body {background-color:#2767BA;}
-h1 {color: #DE1212;
-	font-family: Impact;
-	font-size: 40px;
-	background-color: #000000;
-	padding: 5x;
-	margin-left: 23%;
-	margin-right: 23%;
-	text-align: center;}
-p{color: #FFFFFF;
-	font-family:times new roman;
-	font-size: 18px;
-	text-align: center;
-	margin-right: 25%;
-	margin-left: 25%;
-	border-style: double;
-	border-width: 5px;
-	padding:5px ;
-	margin-bottom:40px ;
-
+/* Page Background and General Alignment */
+body {
+    background-color: #2767BA;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
 }
 
-img{border-style: dotted;
-	border-width: 10px;
-	border-color: #FFFFFF;
-	display: block;
-	margin: auto;
+/* Main Header with Black Background */
+h1 {
+    color: #DE1212;
+    font-family: Impact, sans-serif;
+    font-size: 40px;
+    background-color: #000000;
+    padding: 10px;
+    margin: 20px 23%;
+    text-align: center;
+}
 
+/* Centered Descriptive Paragraph with Double Border */
+p {
+    color: #FFFFFF;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 25% 40px 25%;
+    border-style: double;
+    border-width: 5px;
+    padding: 15px;
+}
 
+/* Centered Image with Dotted White Border */
+img {
+    border-style: dotted;
+    border-width: 10px;
+    border-color: #FFFFFF;
+    display: block;
+    margin: 0 auto 30px auto;
+}
+
+/* Horizontal Navigation Menu Layout */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+/* Navigation Link Box Styling */
+ul li a {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    border: 3px solid #FFFFFF;
+    padding: 15px 20px;
+    min-width: 110px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Individual Link Colors */
+ul li:nth-child(1) a { background-color: #FFB703; color: #000000; } /* Home - Gold */
+ul li:nth-child(2) a { background-color: #E63946; color: #FFFFFF; } /* Landscape - Red */
+ul li:nth-child(3) a { background-color: #F1FAEE; color: #1D3557; } /* Audio - Off-White */
+ul li:nth-child(4) a { background-color: #A8DADC; color: #1D3557; } /* Animation - Light Blue */
+ul li:nth-child(5) a { background-color: #457B9D; color: #FFFFFF; } /* The Final - Blue */
+ul li:nth-child(6) a { background-color: #1D3557; color: #FFFFFF; } /* Programming - Navy */
+
+/* Interactive Hover Animation (Grow and Glow) */
+ul li a:hover {
+    font-size: 26px;
+    border-color: #DE1212;
+    filter: brightness(1.1);
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.4);
+}
